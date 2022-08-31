@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+      }
+      .container {
+        margin: 0 auto;
+        width: 600px;
+        border: 4px solid black;
+      }
+      .head {
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120.7%;
+        text-align: center;
+        text-transform: capitalize;
+      }
+      .para {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #262626;
+      }
+      #section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 35px;
+        color: #000000;
+      }
+      #section2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 140px;
+        background-image: url("Banner.png");
+      }
+      #section3 {
+        padding: 45px;
+      }
+      #section4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 35px;
+        background-color: #122a4c;
+      }
+      .services {
+        display: grid;
+        grid-template-columns: 270px 270px;
+        grid-row: auto auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        margin-bottom: 25px;
+      }
+      .cards {
+        background-color: #ffffff;
+        padding: 15px;
+      }
+      .s-head {
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 15px;
+      }
+      .s-para {
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+      }
+      .l-more {
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 15px;
+        color: #00b1c9;
+        cursor: pointer;
+      }
+      .btn {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 18px 0px;
+        color: #ffffff;
+        background: #00b1c9;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 350px;
+      }
+      #section5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 45px;
+      }
+      .feedback {
+        font-family: "Cera Pro";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #000000;
+      }
+      .author {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        color: #000000;
+      }
+      #section6 {
+        background-color: #1a91b2;
+        padding: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .q-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        padding: 20px 0px;
+        cursor: pointer;
+        margin: 5px 0px;
+        background: #1a91b2;
+        color: #ffffff;
+        border-radius: 5px;
+        border: none;
+        width: 350px;
+      }
+      .q-btn > img {
+        padding: 5px;
+      }
+      .quote {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        text-transform: capitalize;
+      }
+      #section7 {
+        padding: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0A1621;
+      }
+      .bg{
+        background-color: #0A1621;
+        padding: 35px 35px 250px;
+        position: relative;
+      }
+      .land{
+        position: absolute;
+        bottom: -48px;
+        right: -238px; 
+
+      }
+      .msg{
+        position: absolute;
+        bottom: -50px;
+        right: -190px;
+      }
+      #section8 {
+        padding: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #eecc6b;
+      }
+      #section9 {
+        color: #000000;
+        background-color: #ffffff;
+        padding: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #section10 {
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #0a1621;
+        color: #ffffff;
+      }
+      .f-para {
+        font-family: "Cera Pro";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 9.998px;
+        line-height: 13px;
+      }
+      .contact {
+        display: flex;
+      }
+      .cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+      .c-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .cr {
+        display: flex;
+        padding: 0px 21px;
+      }
+      .social {
+        padding: 8px;
+      }
+      @media screen and (max-width: 1017px) {
+        body {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="section" id="section1">
+        <div class="logo">
+          <img src="logo.png" alt="logo" />
+        </div>
+        <div class="banner-text">
+          <h1 class="head">Happy Thanksgiving</h1>
+        </div>
+      </section>
+      <section class="section" id="section2">
+        <div class="banner-image"></div>
+      </section>
+      <section class="section" id="section3">
+        <p class="para">
+          In this season full of gratitude, VSF Marketing shares a hearty thank you! To every one of our clients, partners, and those who have been supporting our business - you all deserve to be thanked for choosing us.          
+        </p>
+        <p class="para">
+          May this Thanksgiving, we reflect on the bountiful blessings that we have been receiving day in and day out. Let's enjoy a meal of mashed potatoes and a juicy roasted turkey with our families, friends, and loved ones. Our warmest Thanksgiving to you and your family.
+        </p>
+      </section>
+      <section class="section" id="section4">
+        <h2 class="head" style="color: #ffffff; font-size: 32px">
+          Our Services
+        </h2>
+        <div class="services">
+          <div class="cards">
+            <img src="serv1.png" alt="" />
+            <h5 class="s-head">Website Development</h5>
+            <p class="s-para">
+              To stand out from the competition, you need a website that can
+              capture an audience and convert them into a lead. With our website
+              design experts, we can make it happen!
+            </p>
+            <p class="l-more">Learn more</p>
+          </div>
+          <div class="cards">
+            <img src="serv2.png" alt="" />
+            <h5 class="s-head">SEO Services</h5>
+            <p class="s-para">
+              Are you wanting to drive more traffic to your website and
+              business? Search engine optimization is one of the most effective
+              ways to do this.
+            </p>
+            <p class="l-more">Learn more</p>
+          </div>
+          <div class="cards">
+            <img src="serv3.png" alt="" />
+            <h5 class="s-head">Advertising Services</h5>
+            <p class="s-para">
+              Do you want to connect with your audience in a more meaningful
+              way? Social media is where the magic happens - and we know exactly
+              how to make social media work for you.
+            </p>
+            <p class="l-more">Learn more</p>
+          </div>
+          <div class="cards">
+            <img src="serv4.png" alt="" />
+            <h5 class="s-head">Marketing Services</h5>
+            <p class="s-para">
+              Our email marketing experts can help craft highly-intelligent
+              email campaigns and re-target customers and stimulate more
+              business.
+            </p>
+            <p class="l-more">Learn more</p>
+          </div>
+        </div>
+        <button class="btn">Discover More Services</button>
+      </section>
+      <section class="section" id="section5">
+        <div class="star">
+          <img src="star.png" alt="star" />
+        </div>
+        <h4 class="feedback">
+          VSFmarketing is by far the best SEO company we"ve worked with. We have
+          seen an increase in calls and web activity and are very happy with
+          their services!
+        </h4>
+        <p class="author">Jane Doe • Customer</p>
+      </section>
+      <section class="section" id="section6">
+        <p class="quote" style="color: #ffffff">
+          Share the good news! Recommend us if you know somebody who badly needs
+          Digital Marketing Services & Solutions.
+        </p>
+        <button class="q-btn" style="background-color: #eecc6b; color: #000000">
+          Spread the Word About Us
+        </button>
+      </section>
+      <section class="section" id="section7">
+        <p class="quote" style="color: #ffffff">
+            We want to hear your feedback! Did our services live up to your expectations? Do tell us to help the next customer make a decision.
+        </p>
+        <button class="q-btn">
+          Let Us Know Your Thoughts
+        </button>
+        <section class="bg">
+            <div class="land"><img src="land.png" alt=""></div>
+            <div class="msg"><img src="msg.png" alt=""></div>
+        </section>
+      </section>
+      <section class="section" id="section8">
+        <p class="quote">
+          Do you want to have an estimate of how much it will cost you? We can
+          provide you with a quote based on your required services.
+        </p>
+        <button class="q-btn">Get a Free Quote Today</button>
+      </section>
+      <section class="section" id="section9">
+        <h4 class="quote">
+          Work with the best Tampa internet marketing & website design company
+        </h4>
+        <button class="q-btn" style="font-size: 20px; padding: 5px;">
+          <img src="phone.png" alt="" /> CALL (727) 400-4720
+        </button>
+      </section>
+      <section class="section" id="section10">
+        <p class="f-para">
+          Your One Stop Shop For World Class Digital Marketing Services &
+          Solutions
+        </p>
+        <div class="contact">
+          <div class="cont">
+            <div><img src="i1.png" alt="" style="width: 20px" /></div>
+            <p style="padding: 5px; font-size: 12px">(813) 606-4171</p>
+          </div>
+          <div class="cont">
+            <div><img src="i2.png" alt="" style="width: 20px" /></div>
+            <p style="padding: 5px; font-size: 12px">VSFmarketing.com</p>
+          </div>
+          <div class="cont">
+            <div><img src="i3.png" alt="" style="width: 20px" /></div>
+            <p style="padding: 5px; font-size: 12px">Odessa, Fl 33556</p>
+          </div>
+        </div>
+        <div class="line"><img src="line.png" alt="" /></div>
+        <div class="c-right">
+          <div class="cr">
+            <p class="cr-para">© 2021 VSF Marketing</p>
+          </div>
+          <div class="cr">
+            <div class="social"><img src="s1.png" alt="" /></div>
+            <div class="social"><img src="s2.png" alt="" /></div>
+            <div class="social"><img src="s3.png" alt="" /></div>
+            <div class="social"><img src="s4.png" alt="" /></div>
+          </div>
+          <div class="cr">
+            <p class="cr-para">Unsubscribe</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

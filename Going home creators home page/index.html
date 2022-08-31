@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0%;
+        padding: 0%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------------------Section1-------------------------------------------- */
+      #section1 {
+        background-image: url("./banner.png");
+        padding: 100px;
+        color: #ffffff;
+      }
+      .banner-para {
+        font-family: "Gordita";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+      }
+      .banner-head {
+        font-family: "Libre Baskerville";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+      }
+      .banner-subtitles {
+        font-family: "Gordita";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+      }
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+      }
+      .c {
+        width: 220px;
+        margin: 0px 15px;
+        padding: 10px 20px;
+        font-family: "Gordita";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        border: 1px solid #ffffff;
+        border-bottom: 3px solid #2ea3f2;
+      }
+      /* ------------------------------------Section2-------------------------------------------- */
+      #section2 {
+        padding: 30px;
+      }
+      .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .head {
+        font-family: "Libre Baskerville";
+        font-weight: 700;
+        font-size: 38px;
+        text-transform: capitalize;
+        color: #1452b2;
+        margin: 20px 0px;
+      }
+      .para {
+        font-family: "Gordita";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 34px;
+        color: #262626;
+      }
+      .h {
+        padding-right: 20px;
+      }
+      .header-para {
+        font-family: "Gordita";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        width: 230px;
+        height: 125px;
+        padding: 20px 20px 200px;
+        margin: 0 20px;
+        background-size: cover;
+      }
+      .card-h {
+        font-family: "Libre Baskerville";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        text-transform: capitalize;
+        color: #2ea3f2;
+      }
+      .card-para {
+        font-family: "Gordita";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #142a7e;
+        cursor: pointer;
+      }
+      .intro {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 30px 0px;
+      }
+
+      .pic > img {
+        padding: 10px;
+        width: 90%;
+      }
+      /* ------------------------------------Section3-------------------------------------------- */
+      #section3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 0px;
+        background-color: #eaf6ff;
+      }
+      .steps {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .img > img {
+        padding-right: 20px;
+      }
+      span {
+        font-family: "Gordita";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: #818181;
+      }
+      /* ------------------------------------Section4-------------------------------------------- */
+      #section4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+      }
+      .b {
+        display: flex;
+        flex-wrap: wrap !important;
+        justify-content: center;
+      }
+      .choose-us {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+      .a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .cu > img {
+        padding-right: 15px;
+      }
+      /* ------------------------------------Section5-------------------------------------------- */
+      #section5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("bg.png");
+        padding: 30px;
+      }
+      .bg-head {
+        padding: 20px;
+        font-family: "Gordita";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 38px;
+        text-transform: capitalize;
+        color: #ffffff;
+      }
+      /* ------------------------------------Section6-------------------------------------------- */
+      #section6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 30px;
+        background: #eaf6ff;
+      }
+      .u {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+        background-color: #ffffff;
+        padding: 20px 18px;
+        margin: 13px 10px;
+        text-align: center;
+      }
+      .u1 {
+        font-family: "Gordita";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        color: #2ea3f2;
+      }
+      .product {
+        width: 71%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      /* ------------------------------------Section7-------------------------------------------- */
+      #section7 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #142a7e;
+        padding: 60px 30px;
+      }
+      /* ------------------------------------Section8-------------------------------------------- */
+      #section8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #EAF6FF;
+        padding: 60px 30px;
+      }
+      .faq-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #ffffff;
+      }
+      .hr-line{
+        width: 90%;
+        margin: auto;
+        
+      }
+      /* Style the buttons that are used to open and close the faq-page body */
+      .faq-page {
+          /* background-color: #eee; */
+          color: #444;
+          cursor: pointer;
+          padding: 30px 20px;
+          border: none;
+          outline: none;
+          transition: 0.4s;
+          margin: auto;
+      }
+      .faq-body{
+          margin: auto;
+          /* text-align: center; */
+        padding: auto;
+        
+      }
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active,
+      .faq-page:hover {
+          background-color: #F9F9F9;
+      }
+      /* Style the faq-page panel. Note: hidden by default */
+      .faq-body {
+          padding: 0 18px;
+          background-color: white;
+          display: none;
+          overflow: hidden;
+      }
+      .faq-page:after {
+          content: '\02795';
+          /* Unicode character for "plus" sign (+) */
+          font-size: 13px;
+          color: #2EA3F2;
+          float: right;
+          margin-left: 5px;
+      }
+      .active:after {
+          color: #2EA3F2;
+          content: "\2796";
+          /* Unicode character for "minus" sign (-) */
+      }
+
+      /* ------------------------------------Section9-------------------------------------------- */
+      #section9{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+      }
+      .location{
+        display: block;
+        background-color: #ffffff;
+        margin: auto;
+      }
+      .place{
+        border: 1px solid #C4C4C4;
+        border-radius: 10px;
+        font-family: 'Gordita';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #262626;
+        padding: 10px;
+        margin: 5px;
+      }
+      .place:hover{
+        background: #2EA3F2;
+        color: #ffffff;
+      }
+
+        /* ------------------------------------Section10-------------------------------------------- */
+        #section10{
+        padding: 60px 30px;;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #05003B;
+        color: #ffffff;
+      }
+      .t-para{
+        font-family: 'Gordita';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 23px;
+      }
+      .f{
+        padding:10px 100px;
+        padding-left: 0;
+      }
+      .nav{
+        display: flex;
+      }
+      .t-para>img{
+        padding-right:10px;
+      }
+      .c-no{
+        font-family: 'Gordita';
+        font-size: 18px;
+        font-weight: 900;
+      }
+      .s-links{
+        cursor: pointer;
+      }
+
+      /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+      @media screen and (max-width: 912px) {
+        .br {
+          display: none;
+        }
+        #section9{
+          flex-wrap:wrap;
+        }
+        .map>img{
+        width: 100%;
+        padding-top: 20px;
+      }
+      #section10{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .f{
+        padding-left: 0;
+      }
+      .navi1{
+        padding: 40px 0px;
+      }
+      .tcm{
+        text-align: center;
+      }
+      }
+      @media screen and (max-width: 768px) {
+        .head {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+        .steps {
+          flex-direction: column;
+        }
+        .img > img {
+          padding-right: 0px;
+        }
+      }
+
+      .lh {
+        line-height: 20px !important;
+        padding: 0px;
+        margin: 0;
+      }
+
+      /* global */
+      .tc {
+        text-align: center;
+      }
+      .btn {
+        padding: 15px 30px;
+        border: none;
+        text-transform: uppercase;
+        background: #2ea3f2;
+        border-radius: 10px;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      .btn:hover{
+        color:#2ea3f2;
+        background-color:#ffffff;
+      }
+      .pt{
+        padding-top: 5px;
+      }
+      .pd{
+        padding-bottom: 5px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- /* ------------------------------------Section1-------------------------------------------- */ -->
+    <section id="section1">
+      <p class="banner-para tc">
+        Our Simple Cremation is $795 Includes A Free Urn and Premium Obituary.
+      </p>
+      <h1 class="banner-head tc">
+        Affordable Cremations & Dignified Care <br class="br" />In St.
+        Petersburg, Sarasota, <br class="br" />Port Charlotte, Fort Myers & SW
+        Florida.
+      </h1>
+      <p class="banner-subtitles tc">Compassion Is At The Heart Of Our Care</p>
+      <div class="contact tc">
+        <div class="c tc">
+          Pinellas | Pasco | Hillsborough <br class="br" /><strong
+            >(727) 353-0214</strong
+          >
+        </div>
+        <div class="c tc">
+          Sarasota | Desoto | Hardee <br class="br" /><strong
+            >(941) 300-1818</strong
+          >
+        </div>
+        <div class="c tc">
+          Charlotte | Lee <br class="br" /><strong>(239) 695-7225</strong>
+        </div>
+      </div>
+    </section>
+    <!-- /* ------------------------------------Section2-------------------------------------------- */ -->
+    <section id="section2">
+      <div class="header">
+        <h4 class="head h">
+          Veniam nostrud exerci <br class="br" />tation ullamcorper
+        </h4>
+        <p class="header-para">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          <br class="br" />nonummy nibh euismod tincidunt ut laoreet dolore
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card" style="background-image: url(bird.png)">
+          <div class="card-h">
+            simple <br />
+            cremation
+          </div>
+          <div class="card-para">Learn More</div>
+        </div>
+        <div class="card" style="background-image: url(./scattering.png)">
+          <div class="card-h">cremation <br class="br" />& scattering</div>
+          <div class="card-para">Learn More</div>
+        </div>
+        <div class="card" style="background-image: url(./veterans.png)">
+          <div class="card-h">veterans <br class="br" />cremation</div>
+          <div class="card-para">Learn More</div>
+        </div>
+      </div>
+      <div class="intro">
+        <div class="content">
+          <h6 class="head">Going Home Cremations</h6>
+          <p class="para">
+            <strong
+              >Our Simple Cremation is $795 Includes <br />A Free Urn and
+              Premium Obituary.
+            </strong>
+          </p>
+          <p class="para">
+            At Going Home Cremations, we know that other places may treat
+            <br class="br" />you like just another customer, but with the
+            personalized attention <br class="br" />we provide our clients, you
+            leave knowing we care. We provide <br class="br" />the same direct
+            cremation services that funeral homes provide
+            <br class="br" />without the large overhead costs. We have been
+            helping families <br class="br" />with cremations for over 20 years.
+          </p>
+          <p class="para">
+            We are a Direct Cremation Facility that will treat your family as if
+            <br class="br" />you are spending funeral home prices. We Provide
+            Affordable, <br class="br" />Low-Cost Cremation Services in St.
+            Petersburg, Bradenton, <br class="br" />Palmetto, Sun City,
+            Sarasota, Venice, Port Charlotte, Punta Gorda,
+            <br class="br" />North Port, Ft. Myers, Bonita Springs, Naples, and
+            Cape Coral and <br class="br" />surrounding areas.
+          </p>
+        </div>
+        <div class="pic"><img src="./flowers.png" alt="" /></div>
+      </div>
+    </section>
+    <!-- /* ------------------------------------Section3-------------------------------------------- */ -->
+    <section id="section3">
+      <h6 class="head">4 simple steps</h6>
+      <p class="para tc">
+        <strong
+          >Make All Necessary Arrangements From The Comfort Of Your Home
+          <br class="br" />Without Driving Anywhere.</strong
+        >
+      </p>
+      <div class="steps">
+        <div class="img"><img src="./call.png" alt="" /></div>
+        <div class="step">
+          <p class="para">
+            <span>STEP 1</span><br />Call us 24/7 to make arrangements. Our
+            personalized service will help you to complete the necessary forms
+            from the comfort of your home.
+          </p>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="img"><img src="./truck.png" alt="" /></div>
+        <div class="step">
+          <p class="para">
+            <span>STEP 1</span><br />Call us 24/7 to make arrangements. Our
+            personalized service will help you to complete the necessary forms
+            from the comfort of your home.
+          </p>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="img"><img src="./fire.png" alt="" /></div>
+        <div class="step">
+          <p class="para">
+            <span>STEP 1</span><br />Call us 24/7 to make arrangements. Our
+            personalized service will help you to complete the necessary forms
+            from the comfort of your home.
+          </p>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="img"><img src="./cup.png" alt="" /></div>
+        <div class="step">
+          <p class="para">
+            <span>STEP 1</span><br />Call us 24/7 to make arrangements. Our
+            personalized service will help you to complete the necessary forms
+            from the comfort of your home.
+          </p>
+        </div>
+      </div>
+      <button class="btn">Contact us</button>
+    </section>
+    <!-- /* ------------------------------------Section4-------------------------------------------- */ -->
+    <section id="section4">
+      <h6 class="head tc">why choose us?</h6>
+      <p class="para tc">
+        At Going Home Cremations, We Know That Other Places May Treat You Like
+        Just Another Customer,<br class="br" />
+        But With The Personalized Attention We Provide Our Clients, You Leave
+        Knowing We Care.
+      </p>
+      <div class="b">
+        <div class="choose-us">
+          <div class="a">
+            <div class="cu">
+              <img src="./money.png" alt="" />
+            </div>
+            <div class="card-h">No Upcharge</div>
+          </div>
+          <p class="para tl">
+            We don’t try to upsell our packages. Our main concern is that your
+            family is taken care of.
+          </p>
+        </div>
+        <div class="choose-us">
+          <div class="a">
+            <div class="cu">
+              <img src="./heart.png" alt="" />
+            </div>
+            <div class="card-h">Personalized</div>
+          </div>
+          <p class="para tl">
+            Our staff answers the phone for all new inquiries. They are
+            dedicated caring and will do everything possible to put your family
+            at ease.
+          </p>
+        </div>
+        <div class="choose-us">
+          <div class="a">
+            <div class="cu">
+              <img src="./six.png" alt="" />
+            </div>
+            <div class="card-h">Six Locations</div>
+          </div>
+          <p class="para tl">
+            We have crematories located in Fort Myers, St. Petersburg, Sarasota,
+            Port Charlotte, Trinity and Tampa.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- /* ------------------------------------Section5-------------------------------------------- */ -->
+    <section id="section5">
+      <div class="bg-head tc">
+        Helping Families In Florida For Over 20 Years, We Provide The
+        <br class="br" />Same Direct Cremation Services That Funeral Homes
+        Provide <br class="br" />Without The Large Overhead Costs.
+      </div>
+      <button class="btn">Contact us</button>
+    </section>
+    <!-- /* ------------------------------------Section6-------------------------------------------- */ -->
+    <section id="section6">
+      <h6 class="head tc">Scattering Ashes & urns</h6>
+      <p class="para tc">
+        <strong
+          >$100 Off Any Full Size Urn When Purchased With One Of Our
+          <br class="br" />Cremation Packages.</strong
+        >
+      </p>
+      <div class="product">
+        <div class="u">
+          <img src="./u1.png" alt="" />
+          <p class="u1">Going Home #1 – $289</p>
+          <p class="para lh">
+            Full-size adult urn.<br />
+            Shipping charges may apply.
+          </p>
+        </div>
+        <div class="u">
+          <img src="./u2.png" alt="" />
+          <p class="u1">Going Home #1 – $289</p>
+          <p class="para lh">
+            Full-size adult urn.<br />
+            Shipping charges may apply.
+          </p>
+        </div>
+        <div class="u">
+          <img src="./u3.png" alt="" />
+          <p class="u1">Going Home #1 – $289</p>
+          <p class="para lh">
+            Full-size adult urn.<br />
+            Shipping charges may apply.
+          </p>
+        </div>
+        <div class="u">
+          <img src="./u4.png" alt="" />
+          <p class="u1">Going Home #1 – $289</p>
+          <p class="para lh">
+            Full-size adult urn.<br />
+            Shipping charges may apply.
+          </p>
+        </div>
+        <div class="u">
+          <img src="./u5.png" alt="" />
+          <p class="u1">Going Home #1 – $289</p>
+          <p class="para lh">
+            Full-size adult urn.<br />
+            Shipping charges may apply.
+          </p>
+        </div>
+        <div class="u">
+          <img src="./u6.png" alt="" />
+          <p class="u1">Going Home #1 – $289</p>
+          <p class="para lh">
+            Full-size adult urn.<br />
+            Shipping charges may apply.
+          </p>
+        </div>
+        <div class="u">
+          <img src="./u7.png" alt="" />
+          <p class="u1">Going Home #1 – $289</p>
+          <p class="para lh">
+            Full-size adult urn.<br />
+            Shipping charges may apply.
+          </p>
+        </div>
+        <div class="u">
+          <img src="./u8.png" alt="" />
+          <p class="u1">Going Home #1 – $289</p>
+          <p class="para lh">
+            Full-size adult urn.<br />
+            Shipping charges may apply.
+          </p>
+        </div>
+        <div class="u">
+          <img src="./u.png" alt="" />
+          <p class="u1">Going Home #1 – $289</p>
+          <p class="para lh">
+            Full-size adult urn.<br />
+            Shipping charges may apply.
+          </p>
+        </div>
+        <div class="u">
+          <img src="./u10.png" alt="" />
+          <p class="u1">Going Home #1 – $289</p>
+          <p class="para lh">
+            Full-size adult urn.<br />
+            Shipping charges may apply.
+          </p>
+        </div>
+        <div class="u">
+          <img src="./u11.png" alt="" />
+          <p class="u1">Going Home #1 – $289</p>
+          <p class="para lh">
+            Full-size adult urn.<br />
+            Shipping charges may apply.
+          </p>
+        </div>
+        <div class="u">
+          <img src="./u12.png" alt="" />
+          <p class="u1">Going Home #1 – $289</p>
+          <p class="para lh">
+            Full-size adult urn.<br />
+            Shipping charges may apply.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- /* ------------------------------------Section7-------------------------------------------- */ -->
+    <section id="section7">
+      <h6 class="head" style="color: #ffffff">What They Say</h6>
+      <button class="btn">SEE MORE REVIEWS</button>
+    </section>
+    <!-- /* ------------------------------------Section8-------------------------------------------- */ -->
+    <section id="section8" >
+        <h6 class="head">Frequently Asked Questions</h6>
+        <main>
+            <section class="faq-container">
+                <div class="faq-one">
+                    <!-- faq question -->
+                    <h1 class="faq-page">Accumsan et iusto odio dignissim qui blandit praesent?</h1>
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p></p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-two">
+                    <!-- faq question -->
+                    <h1 class="faq-page">Luptatum zzril delenit augue duis dolore te feugait nulla facilisi?</h1>
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p></p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-three">
+                    <!-- faq question -->
+    <h1 class="faq-page">Exerci tation ullamcorper suscipit lobortis nisl ut aliquip?</h1>
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p></p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-three">
+                    <!-- faq question -->
+    <h1 class="faq-page">Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit?</h1>
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p></p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+                <div class="faq-three">
+                    <!-- faq question -->
+    <h1 class="faq-page">Duis autem vel eum iriure dolor in hendrerit in vulputate?</h1>
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+          </main>
+          </section>
+    <!-- /* ------------------------------------Section9-------------------------------------------- */ -->
+    <section id="section9">
+      <div class="location">
+        <h6 class="head">Other Service Locations</h6>
+        <div class="place">Port Charlotte</div>
+        <div class="place">St. Petersburg</div>
+        <div class="place">Trinity</div>
+        <div class="place">Bradenton</div>
+        <div class="place">Clearwater</div>
+        <div class="place">Sarasota</div>
+        <div class="place">Venice</div>
+      </div>
+      <div class="map">
+        <img src="map.png" alt="map">
+      </div>
+    </section>
+    <!-- /* ------------------------------------Section10-------------------------------------------- */ -->
+    <section id="section10">
+      <div class="time">
+        <div class="logo">
+          <img src="logo.png" alt="">
+        </div>
+        <div class="t-para pt pd">
+          <img src="clo.png" alt="">Monday - Friday - 8:00 - 4:00
+        </div>
+        <div class="t-para pt pd">
+          <img src="loc.png" alt="">Spring Hill, FL 34606
+        </div>
+        <div class="t-para" style="padding: 10px 0px;">
+          <strong>Follow us</strong>
+        </div>
+        <div class="s-links">
+          <img src="fb.png" alt="">
+          <img src="twitter.png" alt="">
+          <img src="ig.png" alt="">
+        </div>
+      </div>
+      <div class="navi1">
+        <p class="t-para tcm" style="font-size:18px"><strong>Navigation</strong></p>
+        <div class="nav">
+          <div>
+            <div class="t-para f">Simple Cremations</div>
+            <div class="t-para f">Cremation Scattering</div>
+            <div class="t-para f">Veteran Cremation</div>
+            <div class="t-para f">Urns</div>
+            <div class="t-para f">Forms</div>
+          </div>
+          <div>
+            <div class="t-para f">Obituaries</div>
+            <div class="t-para f">Contact</div>
+            <div class="t-para f">Locations</div>
+            <div class="t-para f">General Price List</div>
+            <div class="t-para f">Blog</div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      <div class="nos">
+        <div class="numb">
+          <p class="t-para">Pinellas | Pasco | Hillsborough</p>
+          <p class="c-no">(727) 353-0214</p>
+        </div>
+        <div class="numb">
+          <p class="t-para">Pinellas | Pasco | Hillsborough</p>
+          <p class="c-no">(727) 353-0214</p>
+        </div>
+        <div class="numb">
+          <p class="t-para">Pinellas | Pasco | Hillsborough</p>
+          <p class="c-no">(727) 353-0214</p>
+        </div>
+      </div>
+    </section>
+        <script>
+           var faq = document.getElementsByClassName("faq-page");
+            var i;
+            for (i = 0; i < faq.length; i++) {
+                faq[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var body = this.nextElementSibling;
+                    if (body.style.display === "block") {
+                        body.style.display = "none";
+                    } else {
+                        body.style.display = "block";
+                    }
+                });
+}
+        </script>
+    
+  </body>
+</html>
